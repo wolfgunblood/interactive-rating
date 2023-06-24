@@ -1,23 +1,32 @@
+@import url("https://fonts.google.com/specimen/Overpass");
+
 .submit-container {
-    height: 20vw;
-    width: 20vw;
+    height: 40vh;
+    width: 22vw;
     padding: 2rem;
     background-color: hsl(213, 19%, 18%);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 20px;
+    // align-items: center;
+    justify-content: space-between;
+    // gap: 20px;
     border-radius: 12px;
 
     .app-title {
         margin: 0;
-        font-size: 22px;
+        font-family: "Overpass", sans-serif;
+        font-size: 28px;
         font-weight: 700;
     }
 
     .app-content {
         margin: 0;
-        font-size: 12px;
+        font-family: "Overpass", sans-serif;
+        font-size: 14px;
+        line-height: 1.5;
+        font-weight: 500;
+        letter-spacing: 0.02em;
     }
 
     img {
@@ -29,10 +38,17 @@
         padding: 0.8rem 2rem;
         border-radius: 45px;
         background-color: hsl(25, 97%, 53%);
+        font-family: "Overpass", sans-serif;
         font-size: 16px;
         border: none;
         outline: none;
+        cursor: pointer;
 
+        &:hover {
+            color: hsl(25, 97%, 53%);
+            background-color: #fff;
+            outline: 1px solid hsl(25, 97%, 53%);
+        }
     }
 
     .rating-container {
@@ -42,37 +58,80 @@
         gap: 20px;
 
         .rating {
-
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border-radius: 50%;
             height: 50px;
             width: 50px;
+            background-color: hsla(216, 12%, 8%, 20%);
+            border: none;
+            outline: none;
+            cursor: pointer;
+
+            &:hover {
+                background-color: hsl(217, 12%, 63%);
+            }
+        }
+
+        .active {
+            background-color: hsl(25, 97%, 53%);
         }
     }
 }
 
 .tankyou-container {
-    height: 20vw;
-    width: 20vw;
+    height: 40vh;
+    width: 22vw;
     padding: 2rem;
     background-color: hsl(213, 19%, 18%);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    // align-items: center;
+    justify-content: center;
     gap: 10px;
     border-radius: 12px;
     align-items: center;
 
-    img{
-        height: 100px;
-        width: 150px;
+    img {
+        height: 120px;
+        width: 140px;
     }
 
-    .tankyou-title{
+    .tankyou-title {
         margin: 0;
+        font-family: "Overpass", sans-serif;
+
     }
-    .tankyou-content{
+
+    .tankyou-content-container {
+        padding: 0.5rem 2rem;
+        border-radius: 50px;
+        background-color: hsla(216, 12%, 8%, 20%);
+
+        .tankyou-content {
+            margin: 0;
+            font-family: "Overpass", sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.05em;
+            color: hsl(25, 97%, 53%);
+
+            // line-height: 1.2;
+            // letter-spacing: 0.02em;
+        }
+    }
+
+    .tankyou-content {
+        // width: 90%;
         margin: 0;
-        font-size: 12px;
+        font-family: "Overpass", sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0.02em;
         text-align: center;
+        color: hsl(217, 12%, 63%);
+        line-height: 1.5;
     }
 }
