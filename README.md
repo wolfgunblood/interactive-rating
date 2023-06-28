@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/wolfgunblood/interactive-rating)
-- Live Site URL: [Add live site URL here](https://wolfgunblood.github.io/interactive-rating/)
+- Solution URL: [Solution Repository](https://github.com/wolfgunblood/interactive-rating)
+- Live Site URL: [Live Demo](https://wolfgunblood.github.io/interactive-rating/)
 
 ## My process
 
